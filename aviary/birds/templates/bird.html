@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ bird.name }}</h1>
+    <p>{{ bird.age }}</p>
+    <p>{{ bird.species.name }}</p>
+    <p>{{ bird.species.description }}</p>
+
+{% endblock content %}

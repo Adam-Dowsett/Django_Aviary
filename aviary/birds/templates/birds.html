@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Aviary's Birds</h1>
+    <p>Here are all the birds:</p>
+    <ul id="birds-container">
+    {% for bird in birds %}
+        <li>
+            <a href="{% url 'birds-bird' id=bird.id %}">
+                {{ bird.name }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
